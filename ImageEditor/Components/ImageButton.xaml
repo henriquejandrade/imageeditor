@@ -1,0 +1,32 @@
+﻿<Button x:Class="ImageEditor.Components.ImageButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ImageEditor.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Button.Template>
+        <ControlTemplate TargetType="{x:Type Button}">
+            <Border x:Name="Border" Background="{Binding Path=Background, RelativeSource={RelativeSource TemplatedParent}}" BorderBrush="{x:Null}">
+                <Rectangle Fill="{Binding Path=Foreground, RelativeSource={RelativeSource TemplatedParent}}" RenderOptions.BitmapScalingMode="HighQuality">
+                    <Rectangle.OpacityMask>
+                        <ImageBrush x:Name="Icon" ImageSource="{Binding Path=Icon, RelativeSource={RelativeSource TemplatedParent}}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Border>
+
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter TargetName="Border" Property="Background" Value="{Binding Path=HighlightedBackground, RelativeSource={RelativeSource TemplatedParent}}" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="true" >
+                    <Setter TargetName="Border" Property="Background" Value="{Binding Path=PressedBackground, RelativeSource={RelativeSource TemplatedParent}}" />
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false" >
+                    <Setter TargetName="Border" Property="Background" Value="{Binding Path=DisabledBackground, RelativeSource={RelativeSource TemplatedParent}}" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Button.Template>
+</Button>

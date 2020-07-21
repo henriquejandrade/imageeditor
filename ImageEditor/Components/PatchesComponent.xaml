@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="ImageEditor.Components.PatchesComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ImageEditor.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="400">
+    <Grid Background="#BBB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <local:ImageLabelButton Grid.Row="0" 
+                                x:Name="TitleButton"
+                                Text="Patch"
+                                FontFamily="Verdana"
+                                FontSize="9pt"
+                                Icon="/Images/Icons/Things/scissors.png"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="0.5*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Image Source="/Images/Icons/Things/scissors.png" />
+            </Grid>
+
+            <TextBlock Grid.Row="0" Grid.Column="1"
+                       x:Name="WidthBox"
+                       Height="50" />
+
+            <Grid Grid.Row="1">
+                <Image Source="/Images/Icons/Things/scissors.png" />
+            </Grid>
+
+            <TextBlock Grid.Row="1" Grid.Column="1"
+                       x:Name="HeightBox"
+                       Height="50" />
+        </Grid>
+    </Grid>
+</UserControl>

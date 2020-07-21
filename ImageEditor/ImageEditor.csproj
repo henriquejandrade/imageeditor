@@ -1,0 +1,167 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Icons\Symbols\addition.png" />
+    <None Remove="Images\Icons\Symbols\arrows_ratio.png" />
+    <None Remove="Images\Icons\Symbols\arrow_down.png" />
+    <None Remove="Images\Icons\Symbols\arrow_left.png" />
+    <None Remove="Images\Icons\Symbols\arrow_right.png" />
+    <None Remove="Images\Icons\Symbols\arrow_small_down.png" />
+    <None Remove="Images\Icons\Symbols\briefcase.png" />
+    <None Remove="Images\Icons\Symbols\cake.png" />
+    <None Remove="Images\Icons\Symbols\calendar.png" />
+    <None Remove="Images\Icons\Symbols\char_at.png" />
+    <None Remove="Images\Icons\Symbols\check-true.png" />
+    <None Remove="Images\Icons\Symbols\circle.png" />
+    <None Remove="Images\Icons\Symbols\circle_inner.png" />
+    <None Remove="Images\Icons\Symbols\city.png" />
+    <None Remove="Images\Icons\Symbols\clock.png" />
+    <None Remove="Images\Icons\Symbols\cloud.png" />
+    <None Remove="Images\Icons\Symbols\cross_mark.png" />
+    <None Remove="Images\Icons\Symbols\device.png" />
+    <None Remove="Images\Icons\Symbols\device_connected.png" />
+    <None Remove="Images\Icons\Symbols\device_cross.png" />
+    <None Remove="Images\Icons\Symbols\device_wifi.png" />
+    <None Remove="Images\Icons\Symbols\dots.png" />
+    <None Remove="Images\Icons\Symbols\eeg_device.png" />
+    <None Remove="Images\Icons\Symbols\emg_device.png" />
+    <None Remove="Images\Icons\Symbols\emg_device2.png" />
+    <None Remove="Images\Icons\Symbols\export.png" />
+    <None Remove="Images\Icons\Symbols\flag_tilt.png" />
+    <None Remove="Images\Icons\Symbols\gear.png" />
+    <None Remove="Images\Icons\Symbols\gear_question.png" />
+    <None Remove="Images\Icons\Symbols\gear_tick.png" />
+    <None Remove="Images\Icons\Symbols\globe.png" />
+    <None Remove="Images\Icons\Symbols\globe_cross.png" />
+    <None Remove="Images\Icons\Symbols\group.png" />
+    <None Remove="Images\Icons\Symbols\height.png" />
+    <None Remove="Images\Icons\Symbols\info.png" />
+    <None Remove="Images\Icons\Symbols\last_time.png" />
+    <None Remove="Images\Icons\Symbols\letter.png" />
+    <None Remove="Images\Icons\Symbols\locker.png" />
+    <None Remove="Images\Icons\Symbols\locker_question.png" />
+    <None Remove="Images\Icons\Symbols\maestro.png" />
+    <None Remove="Images\Icons\Symbols\magnifier.png" />
+    <None Remove="Images\Icons\Symbols\menu.png" />
+    <None Remove="Images\Icons\Symbols\minus.png" />
+    <None Remove="Images\Icons\Symbols\neuroup_database.png" />
+    <None Remove="Images\Icons\Symbols\paper.png" />
+    <None Remove="Images\Icons\Symbols\papers.png" />
+    <None Remove="Images\Icons\Symbols\paper_right.png" />
+    <None Remove="Images\Icons\Symbols\paper_tick.png" />
+    <None Remove="Images\Icons\Symbols\password.png" />
+    <None Remove="Images\Icons\Symbols\person.png" />
+    <None Remove="Images\Icons\Symbols\person_new.png" />
+    <None Remove="Images\Icons\Symbols\phone.png" />
+    <None Remove="Images\Icons\Symbols\pin.png" />
+    <None Remove="Images\Icons\Symbols\play.png" />
+    <None Remove="Images\Icons\Symbols\plus.png" />
+    <None Remove="Images\Icons\Symbols\printer.png" />
+    <None Remove="Images\Icons\Symbols\recovery.png" />
+    <None Remove="Images\Icons\Symbols\scale.png" />
+    <None Remove="Images\Icons\Symbols\speech.png" />
+    <None Remove="Images\Icons\Symbols\speech_circle.png" />
+    <None Remove="Images\Icons\Symbols\square_tick.png" />
+    <None Remove="Images\Icons\Symbols\tag.png" />
+    <None Remove="Images\Icons\Symbols\tick.png" />
+    <None Remove="Images\Icons\Symbols\trash.png" />
+    <None Remove="Images\Icons\Symbols\turtle.png" />
+    <None Remove="Images\Icons\Symbols\wifi.png" />
+    <None Remove="Images\Icons\Things\folder.png" />
+    <None Remove="Images\Icons\Things\magnifier.png" />
+    <None Remove="Images\Icons\Things\paper.png" />
+    <None Remove="Images\Icons\Things\pencil.png" />
+    <None Remove="Images\Icons\Things\picture.png" />
+    <None Remove="Images\Icons\Things\scissors.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.3.0.3890" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.3.0.3890" />
+    <PackageReference Include="OpenCV" Version="2.4.11" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Icons\Symbols\addition.png" />
+    <Resource Include="Images\Icons\Symbols\arrows_ratio.png" />
+    <Resource Include="Images\Icons\Symbols\arrow_down.png" />
+    <Resource Include="Images\Icons\Symbols\arrow_left.png" />
+    <Resource Include="Images\Icons\Symbols\arrow_right.png" />
+    <Resource Include="Images\Icons\Symbols\arrow_small_down.png" />
+    <Resource Include="Images\Icons\Symbols\briefcase.png" />
+    <Resource Include="Images\Icons\Symbols\cake.png" />
+    <Resource Include="Images\Icons\Symbols\calendar.png" />
+    <Resource Include="Images\Icons\Symbols\char_at.png" />
+    <Resource Include="Images\Icons\Symbols\check-true.png" />
+    <Resource Include="Images\Icons\Symbols\circle.png" />
+    <Resource Include="Images\Icons\Symbols\circle_inner.png" />
+    <Resource Include="Images\Icons\Symbols\city.png" />
+    <Resource Include="Images\Icons\Symbols\clock.png" />
+    <Resource Include="Images\Icons\Symbols\cloud.png" />
+    <Resource Include="Images\Icons\Symbols\cross_mark.png" />
+    <Resource Include="Images\Icons\Symbols\device.png" />
+    <Resource Include="Images\Icons\Symbols\device_connected.png" />
+    <Resource Include="Images\Icons\Symbols\device_cross.png" />
+    <Resource Include="Images\Icons\Symbols\device_wifi.png" />
+    <Resource Include="Images\Icons\Symbols\dots.png" />
+    <Resource Include="Images\Icons\Symbols\eeg_device.png" />
+    <Resource Include="Images\Icons\Symbols\emg_device.png" />
+    <Resource Include="Images\Icons\Symbols\emg_device2.png" />
+    <Resource Include="Images\Icons\Symbols\export.png" />
+    <Resource Include="Images\Icons\Symbols\flag_tilt.png" />
+    <Resource Include="Images\Icons\Symbols\gear.png" />
+    <Resource Include="Images\Icons\Symbols\gear_question.png" />
+    <Resource Include="Images\Icons\Symbols\gear_tick.png" />
+    <Resource Include="Images\Icons\Symbols\globe.png" />
+    <Resource Include="Images\Icons\Symbols\globe_cross.png" />
+    <Resource Include="Images\Icons\Symbols\group.png" />
+    <Resource Include="Images\Icons\Symbols\height.png" />
+    <Resource Include="Images\Icons\Symbols\info.png" />
+    <Resource Include="Images\Icons\Symbols\last_time.png" />
+    <Resource Include="Images\Icons\Symbols\letter.png" />
+    <Resource Include="Images\Icons\Symbols\locker.png" />
+    <Resource Include="Images\Icons\Symbols\locker_question.png" />
+    <Resource Include="Images\Icons\Symbols\maestro.png" />
+    <Resource Include="Images\Icons\Symbols\magnifier.png" />
+    <Resource Include="Images\Icons\Symbols\menu.png" />
+    <Resource Include="Images\Icons\Symbols\minus.png" />
+    <Resource Include="Images\Icons\Symbols\neuroup_database.png" />
+    <Resource Include="Images\Icons\Symbols\paper.png" />
+    <Resource Include="Images\Icons\Symbols\papers.png" />
+    <Resource Include="Images\Icons\Symbols\paper_right.png" />
+    <Resource Include="Images\Icons\Symbols\paper_tick.png" />
+    <Resource Include="Images\Icons\Symbols\password.png" />
+    <Resource Include="Images\Icons\Symbols\person.png" />
+    <Resource Include="Images\Icons\Symbols\person_new.png" />
+    <Resource Include="Images\Icons\Symbols\phone.png" />
+    <Resource Include="Images\Icons\Symbols\pin.png" />
+    <Resource Include="Images\Icons\Symbols\play.png" />
+    <Resource Include="Images\Icons\Symbols\plus.png" />
+    <Resource Include="Images\Icons\Symbols\printer.png" />
+    <Resource Include="Images\Icons\Symbols\recovery.png" />
+    <Resource Include="Images\Icons\Symbols\scale.png" />
+    <Resource Include="Images\Icons\Symbols\speech.png" />
+    <Resource Include="Images\Icons\Symbols\speech_circle.png" />
+    <Resource Include="Images\Icons\Symbols\square_tick.png" />
+    <Resource Include="Images\Icons\Symbols\tag.png" />
+    <Resource Include="Images\Icons\Symbols\tick.png" />
+    <Resource Include="Images\Icons\Symbols\trash.png" />
+    <Resource Include="Images\Icons\Symbols\turtle.png" />
+    <Resource Include="Images\Icons\Symbols\wifi.png" />
+    <Resource Include="Images\Icons\Things\folder.png" />
+    <Resource Include="Images\Icons\Things\magnifier.png" />
+    <Resource Include="Images\Icons\Things\paper.png" />
+    <Resource Include="Images\Icons\Things\pencil.png" />
+    <Resource Include="Images\Icons\Things\picture.png" />
+    <Content Include="Images\Icons\Things\scissors.png" />
+  </ItemGroup>
+
+</Project>
